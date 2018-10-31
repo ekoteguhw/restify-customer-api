@@ -7,6 +7,9 @@ NodeJS Rest API using some packages:
 * mongoose
 * mongoose-timestamp
 * dotenv
+* jsonwebtoken
+* bcryptjs
+* restify-jwt-community
 
 ## ENVIRONMENT
 
@@ -20,6 +23,7 @@ MONGODB_URI=
 MONGODB_USER=
 MONGODB_PASS=
 MONGODB_DB=
+JWT_SECRET=
 ```
 
 ## List of API
@@ -33,3 +37,10 @@ MONGODB_DB=
 | /customers/:id | GET    | Get a Customer by id    |
 | /customers/:id | PUT    | Update a Customer by id |
 | /customers/:id | DELETE | Delete a Customer by id |
+
+### User
+
+| URI      | Method | Description                   |
+| -------- | ------ | ----------------------------- |
+| /sign_up | POST   | Sign Up a User                |
+| /sign_in | POST   | Sign In (Authenticate) a User |

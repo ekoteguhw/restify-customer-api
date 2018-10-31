@@ -7,4 +7,5 @@ module.exports = {
     `mongodb://${process.env.MONGODB_USER}:${
       process.env.MONGODB_PASS
     }@ds147073.mlab.com:47073/${process.env.MONGODB_DB}`,
+  JWT_SECRET: process.env.JWT_SECRET || 'secret',
 }
